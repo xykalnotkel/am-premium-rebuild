@@ -1,0 +1,10 @@
+node_modules/
+.next/
+out/
+.env
+.env*.local
+data/stats.json
+*.log
+.DS_Store
+icon-work/src/
+icon-work/cut/

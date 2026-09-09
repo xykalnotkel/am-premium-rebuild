@@ -65,7 +65,7 @@ export async function POST(req) {
       `https://identitytoolkit.googleapis.com/v1/accounts:signInWithEmailLink?key=${cfg.apiKey}`,
       {
         method: "POST",
-        headers: androidHeaders(cfg.pkg),
+        headers: androidHeaders(cfg.pkg, cfg.referer),
         body: JSON.stringify({ email, oobCode, returnSecureToken: true }),
       }
     );
@@ -88,7 +88,7 @@ export async function POST(req) {
         `https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=${cfg.apiKey}`,
         {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: { "Content-Type": "application/json", Referer: cfg.referer },
           body: JSON.stringify({ idToken: fb.idToken }),
         }
       );

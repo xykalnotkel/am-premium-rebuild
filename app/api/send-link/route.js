@@ -39,7 +39,7 @@ export async function POST(req) {
       `https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=${cfg.apiKey}`,
       {
         method: "POST",
-        headers: androidHeaders(cfg.pkg),
+        headers: androidHeaders(cfg.pkg, cfg.referer),
         body: JSON.stringify({
           requestType: "EMAIL_SIGNIN",
           email,

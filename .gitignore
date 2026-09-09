@@ -8,3 +8,5 @@ data/stats.json
 .DS_Store
 icon-work/src/
 icon-work/cut/
+.vercel
+.vercel/

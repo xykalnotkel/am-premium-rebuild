@@ -3,6 +3,7 @@
 Rebuild penuh dari `am-premiumms.vercel.app` hasil reverse-engineering. Backend **langsung ke Firebase IdentityToolkit** — tanpa perantara, tanpa tergantung web lama. UI **Quiet Surface** + **icon library AI ungu** (WebP transparan).
 
 Repo: `https://github.com/xykalnotkel/am-premium-rebuild`
+Live: `https://am-premium-rebuild.vercel.app`
 
 ## 1. Struktur proyek
 
